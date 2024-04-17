@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id ("kotlin-kapt")
 }
 
 android {
@@ -66,4 +67,36 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+
+    // Navigation
+    implementation (libs.androidx.navigation.compose)
+
+    // LiveData-State
+    implementation (libs.androidx.runtime.livedata)
+
+    // Coil
+    implementation (libs.coil.compose)
+
+    // Coroutines
+    implementation (libs.kotlinx.coroutines.android)
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+
+    // Koin
+    implementation (libs.cokoin)
+    implementation (libs.cokoin.android.viewmodel)
+    implementation (libs.cokoin.android.navigation)
+
+    // Retrofit
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+
+    // Room
+    implementation (libs.androidx.room.runtime)
+    implementation (libs.androidx.room.compiler)
+
+    // System Ui Controller
+    implementation (libs.accompanist.systemuicontroller
+)
+
 }
