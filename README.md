@@ -1,1 +1,2 @@
-# BagStore-app
+# BagStore-App
+retrofit - RoomDB - RXJava - 
